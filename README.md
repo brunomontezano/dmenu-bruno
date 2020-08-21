@@ -1,6 +1,6 @@
 # dmenu-bruno
 
-This repository contain my dmenu build already patched.
+This repository contain my dmenu build already patched with alpha for transparency and some others.
 
 ## Dependencies
 
