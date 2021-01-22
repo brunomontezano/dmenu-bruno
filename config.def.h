@@ -18,10 +18,10 @@ static const char *fonts[] = {
 static const char *prompt      = NULL;      /* -p option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#cccccc", "#282a36" },
-	[SchemeSel] = { "#ffffff", "#924441" },
+	[SchemeNorm] = { "#cccccc", "#282828" },
+	[SchemeSel] = { "#ffffff", "#928374" },
 	[SchemeSelHighlight] = { "#d7d7d7", "#000000" },
-	[SchemeNormHighlight] = { "#e78481", "#000000" },
+	[SchemeNormHighlight] = { "#AAAAAA", "#000000" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 	[SchemeMid] = { "#d7d7d7", "#1f2026" },
 };
@@ -37,4 +37,3 @@ static const char worddelimiters[] = " ";
 
 /* Size of the window border */
 static unsigned int border_width = 0;  /* -bw option; to add border width */
-
