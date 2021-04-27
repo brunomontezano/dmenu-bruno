@@ -17,15 +17,24 @@ static const char *fonts[] = {
 	"JoyPixels:pixelsize=8:antialias=true:autohint=true"
 };
 static const char *prompt      = NULL;      /* -p option; prompt to the left of input field */
+
+static const char nord_fg[]         = "#D8DEE9";
+static const char nord_bg[]         = "#4C566A";
+static const char nord_blue[]       = "#81A1C1";
+static const char nord_grey[]       = "#3B4252";
+static const char nord_yellow[]     = "#EBCB8B";
+static const char nord_white[]      = "#E5E9F0";
+
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#ebdbb2", "#282828" },
-	[SchemeSel] = { "#282828", "#fabd2f" },
-	[SchemeSelHighlight] = { "#ebdbb2", "#1d2021" },
-	[SchemeNormHighlight] = { "#AAAAAA", "#1d2021" },
-	[SchemeOut] = { "#1d2021", "#00ffff" },
-	[SchemeMid] = { "#d7d7d7", "#1f2026" },
+	[SchemeNorm] = { nord_fg, nord_bg   },
+	[SchemeSel] =  { nord_bg, nord_blue },
+	[SchemeMid] = { nord_white, nord_grey },
+	[SchemeOut] =  { nord_fg, nord_bg   },
+    [SchemeSelHighlight] = { nord_yellow, nord_bg },
+	[SchemeNormHighlight] = { nord_yellow, nord_grey },
 };
+
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
 static unsigned int lineheight = 22;         /* -h option; minimum height of a menu line     */
