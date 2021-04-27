@@ -19,7 +19,7 @@ static const char *fonts[] = {
 static const char *prompt      = NULL;      /* -p option; prompt to the left of input field */
 
 static const char nord_fg[]         = "#D8DEE9";
-static const char nord_bg[]         = "#4C566A";
+static const char nord_bg[]         = "#2E3440";
 static const char nord_blue[]       = "#81A1C1";
 static const char nord_grey[]       = "#3B4252";
 static const char nord_yellow[]     = "#EBCB8B";
